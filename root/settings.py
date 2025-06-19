@@ -128,7 +128,7 @@ REST_FRAMEWORK = {
 }
 
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'Shohrux Projects API',
+    'TITLE': 'Shohrux2 Projects API',
     'DESCRIPTION': 'Your Project Description',
     'VERSION': '1.0.0',
     'SERVER_INCLUDE_SCHEMA': False,
