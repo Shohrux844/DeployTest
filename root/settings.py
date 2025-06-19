@@ -127,6 +127,7 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 1
 }
 
+
 SPECTACULAR_SETTINGS = {
     'TITLE': 'Shohrux2 Projects API',
     'DESCRIPTION': 'Your Project Description',
