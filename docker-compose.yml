@@ -1,0 +1,28 @@
+version: '2.36.0'
+
+services:
+  pg:
+    image: postgres:alpine
+    container_name: deploytest_db
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 1
+    ports:
+      - 5436:5432
+    volumes:
+      - pg_data:/var/lib/postgresql
+
+  deploytest:
+    build: .
+    image: deploytest:alpine
+    container_name: deploytest_con
+    restart: always
+    depends_on:
+      - pg
+    command: sh -c "python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py runserver 0.0.0.0:8002"
+    ports:
+      - '8002:8002'
+
+volumes:
+  pg_data:
+

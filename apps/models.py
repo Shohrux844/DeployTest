@@ -10,4 +10,5 @@ class Category(Model):
 class Product(Model):
     name = CharField(max_length=100)
     price = DecimalField(decimal_places=2, max_digits=10)
-    created = DateTimeField(auto_now_add=True)
+    created = DateTimeField(auto_now_add=True, null=True, blank=True)
+    updated = DateTimeField(auto_now=True, null=True, blank=True)

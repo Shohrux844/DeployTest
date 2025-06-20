@@ -10,4 +10,3 @@ from apps.serializers import ProductSerializer
 class ProductDetailView(ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    permission_classes = [IsAuthenticated]

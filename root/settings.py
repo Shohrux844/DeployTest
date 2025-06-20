@@ -183,6 +183,8 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'razakovshohrux@gmail.com'
 EMAIL_HOST_PASSWORD = 'pvbbiegokeknqwfd'
 
+
+
 # INSTALLED_APPS += ['corsheaders']
 # MIDDLEWARE = ['corsheaders.middleware.CorsMiddleware'] + MIDDLEWARE
 # CORS_ALLOW_ALL_ORIGINS = True
